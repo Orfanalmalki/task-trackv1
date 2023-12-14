@@ -1,7 +1,12 @@
+import { Button } from "@radix-ui/themes";
 import React from "react";
 
 const TasksPage = () => {
-  return <div>TasksPage</div>;
+  return (
+    <div>
+      <Button>New Task</Button>
+    </div>
+  );
 };
 
 export default TasksPage;
