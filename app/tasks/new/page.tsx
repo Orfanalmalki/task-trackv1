@@ -1,7 +1,8 @@
 "use client";
 
-import { Button, TextArea, TextField } from "@radix-ui/themes";
-import React from "react";
+import { Button, TextField } from "@radix-ui/themes";
+import SimpleMDE from "react-simplemde-editor";
+import "easymde/dist/easymde.min.css";
 
 const newTaskPage = () => {
   return (
@@ -9,7 +10,7 @@ const newTaskPage = () => {
       <TextField.Root>
         <TextField.Input placeholder="Title"></TextField.Input>
       </TextField.Root>
-      <TextArea placeholder="Description"></TextArea>
+      <SimpleMDE placeholder="Description"></SimpleMDE>
       <Button>Create New Task</Button>
     </div>
   );
